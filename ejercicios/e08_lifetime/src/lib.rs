@@ -1,8 +1,7 @@
 //! Ejercicio 8: el nombre más largo, para calcular el ancho de la tabla de puntajes.
 //! `mas_largo` devuelve el más largo de los dos; si miden igual, el primero.
 
-// 'a: lo que devuelve vive mientras vivan a y b.
-pub fn mas_largo<'a>(a: &'a str, b: &'a str) -> &'a str {
+pub fn mas_largo(a: &str, b: &str) -> &str {
     if b.chars().count() > a.chars().count() {
         b
     } else {

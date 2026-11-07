@@ -2,8 +2,7 @@
 //! `porcentaje_vida(30, 120)` debe dar 25.0.
 
 pub fn porcentaje_vida(vida: u32, maxima: u32) -> f64 {
-    // Convierte antes de dividir: 30 / 120 en enteros da 0.
-    vida as f64 / maxima as f64 * 100.0
+    vida / maxima * 100
 }
 
 // NO CAMBIES LAS PRUEBAS: el comprobador revisa que sigan igual.

@@ -1,7 +1,7 @@
 //! Ejercicio 10: una lista separada por comas para el registro del servidor.
 //! `en_lista` sirve para cualquier tipo que se pueda mostrar con "{}".
 
-pub fn en_lista<T: std::fmt::Display>(elementos: &[T]) -> String {
+pub fn en_lista<T>(elementos: &[T]) -> String {
     let mut textos = Vec::new();
     for e in elementos {
         textos.push(format!("{e}"));

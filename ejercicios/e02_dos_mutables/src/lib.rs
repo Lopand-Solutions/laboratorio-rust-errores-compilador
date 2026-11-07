@@ -2,8 +2,9 @@
 //! `subir_al_segundo` deja al segundo lugar en el primero y al primero en el segundo.
 
 pub fn subir_al_segundo(tabla: &mut [String]) {
-    // swap toma un solo préstamo mutable de la tabla y hace el cambio por dentro.
-    tabla.swap(0, 1);
+    let primero = &mut tabla[0];
+    let segundo = &mut tabla[1];
+    std::mem::swap(primero, segundo);
 }
 
 // NO CAMBIES LAS PRUEBAS: el comprobador revisa que sigan igual.

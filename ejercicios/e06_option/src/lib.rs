@@ -11,8 +11,7 @@ pub fn buscar(tienda: &[(&str, u32)], nombre: &str) -> Option<u32> {
 }
 
 pub fn precio_total(tienda: &[(&str, u32)], nombre: &str, cantidad: u32) -> Option<u32> {
-    // ? devuelve None en cuanto buscar no encuentra el objeto.
-    let precio = buscar(tienda, nombre)?;
+    let precio = buscar(tienda, nombre);
     Some(precio * cantidad)
 }
 

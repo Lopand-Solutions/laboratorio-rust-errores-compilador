@@ -7,7 +7,7 @@ pub struct Personaje {
     pub vida_maxima: u32,
 }
 
-pub fn subir_nivel(personaje: &mut Personaje) {
+pub fn subir_nivel(personaje: &Personaje) {
     personaje.nivel += 1;
     personaje.vida = personaje.vida_maxima;
 }

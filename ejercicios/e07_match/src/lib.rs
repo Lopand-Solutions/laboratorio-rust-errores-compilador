@@ -13,7 +13,6 @@ pub fn etiqueta(estado: &Estado) -> &'static str {
         Estado::Pendiente => "pendiente",
         Estado::EnCurso => "en curso",
         Estado::Hecha => "hecha",
-        Estado::Bloqueada => "bloqueada",
     }
 }
 

@@ -2,10 +2,9 @@
 //! `registrar` agrega `nuevo` a la lista y devuelve el puntaje más alto, contando el nuevo.
 
 pub fn registrar(puntajes: &mut Vec<u32>, nuevo: u32) -> u32 {
-    // Con * copiamos el u32: record ya no es un préstamo de puntajes.
-    let record = *puntajes.iter().max().unwrap_or(&0);
+    let record = puntajes.iter().max().unwrap_or(&0);
     puntajes.push(nuevo);
-    record.max(nuevo)
+    *record.max(&nuevo)
 }
 
 // NO CAMBIES LAS PRUEBAS: el comprobador revisa que sigan igual.
