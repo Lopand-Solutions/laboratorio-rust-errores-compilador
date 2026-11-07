@@ -1,0 +1,5 @@
+[package]
+name = "e09_referencia_local"
+version = "0.1.0"
+edition = "2024"
+publish = false

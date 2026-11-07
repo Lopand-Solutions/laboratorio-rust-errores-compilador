@@ -1,0 +1,4 @@
+# Cada ejercicio es un paquete aparte: uno que no compila no impide probar los demás.
+[workspace]
+members = ["ejercicios/*"]
+resolver = "3"
